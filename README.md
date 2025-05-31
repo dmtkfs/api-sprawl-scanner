@@ -1,11 +1,16 @@
 # API‑Sprawl Scanner (Pure‑Nmap Edition)
 
+
+Scans any CIDR block with Nmap, fingerprints ports 80/443 (or custom) and writes a collapsible Markdown inventory of every live web service.
+
 Map every web service in a CIDR block with **one command**.
 
 * **Single‑file** Python 3 script (`scan.py`)
 * Uses **Nmap** only – no Masscan or raw packet tricks
 * Outputs a Markdown report in `reports/`  
   (collapsible http‑enum details for each host)
+
+---
 
 ## Quick start
 
