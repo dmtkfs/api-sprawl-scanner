@@ -1,0 +1,6 @@
+# virtual env
+.venv/
+# nmap output
+nmap.xml
+reports/
+__pycache__/
