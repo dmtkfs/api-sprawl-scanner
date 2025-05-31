@@ -28,7 +28,7 @@ python scan.py 192.168.1.0/24
 
 ```
 reports/xxxxxxxx-xxxx-192.168.1.0_24.md
-└── 192.168.0.0
+└── 192.168.1.0
     ├─ 80  http    Router Info
     └─ 443 https   Router Info
 ```
