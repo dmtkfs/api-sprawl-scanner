@@ -12,6 +12,24 @@ Map every web service in a CIDR block with **one command**.
 
 ---
 
+## Why not just copy‑paste raw Nmap output?
+
+* **Clean Markdown reports** – the script converts Nmap XML into a table + collapsible
+  `http‑enum` details, ready to drop into GitHub, Confluence, Notion, etc.
+* **Repeatable defaults** – ports 80/443, `-sV`, `http-enum`, and timing flags are baked in,
+  so every run is apples‑to‑apples.
+* **History & diff‑friendly** – each scan writes `reports/YYYYMMDD‑BLOCK.md`; you can track
+  service‑drift in Git just by diffing Markdown.
+* **Automation‑ready** – exits with a clean 0/1 status and no noisy terminal banners,
+  making it trivial to schedule in cron or GitHub Actions.
+* **Easy knobs** – adjust `PORTS` or extend `NMAP_OPTS` in two lines; no need for long
+  command‑line Kung Fu.
+
+If you just need a one‑off check, plain Nmap is great; when you want a shareable,
+version‑controlled inventory, this wrapper saves time.
+
+---
+
 ## Quick start
 
 ```powershell
